@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <form class="form">
+        <div class="result">
+          <p>Result message:</p>
+          <p></p>
+        </div>
+        <div class="form__item">
+          <input class="form__item_input" placeholder="Name">
+          <div class="form__item_error hidden">
+            <img src="./assets//img//errorIcon.svg" alt="error"> <span>Required</span>
+          </div>
+        </div>
+
+        <div class="form__item">
+          <input class="form__item_input" placeholder="Email" data-type="email-input">
+          <div class="form__item_error hidden">
+            <img src="./assets//img//errorIcon.svg" alt="error"> <span>Required and must be a valid address</span>
+          </div>
+        </div>
+
+        <div class="form__item">
+          <input data="tel-input" class="form__item_input" type="tel" placeholder="Phone">
+          <div class="form__item_error hidden">
+            <img src="./assets//img//errorIcon.svg" alt="error"> <span>Required</span>
+          </div>
+        </div>
+
+        <div class="form__item">
+          <textarea class="form__item_input message" placeholder="Message"></textarea>
+          <div class="form__item_error hidden">
+            <img src="./assets//img//errorIcon.svg" alt="error"> <span>Required</span>
+          </div>
+        </div>
+
+        <div class="button__container">
+          <button class="button">Submit</button>
+          <button id="popUpBtn" type="button" class="button">Modal</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <div class="popup hidden">
+    <div class="popup__inner">
+      <button id="closePopUpBtn" class="popup__button"></button>
+      <p>Hello, thank you for opportunity!</p>
+    </div>
+  </div>
+</body>
+
+</html>
